@@ -59,10 +59,11 @@ Invocando `require()` con la ruta a un archivo JSON se leerán y analizarán los
 const paises = require('./paises.json')
 ```
 
-**1.-** Comience por escribir diferentes módulos (ficheros `.js`), uno para cada tipología de datos, en los que se incluyan en
+**1.-** Comience por escribir diferentes módulos (ficheros `.js`; se propone usar módulos en formato CommonJS), 
+uno para cada tipología de datos, en los que se incluyan en
 forma de variables (ha de elegir el tipo de variable a utilizar) la información por países correspondiente a un determinado aspecto (idioma, religión, etc.)
 de cada país.
-Así por ejemplo el módulo `country-population.js` debería contener una variable (variable, constante, objeto, ...) que almacenara los datos de población de cada uno de los países.
+Así por ejemplo el módulo `country-population.js` debería contener una entidad (variable, constante, objeto, ...) que almacenara los datos de población de cada uno de los países.
 Ese módulo debería exportar esa variable para hacerla disponible a otros programas JavaScript.
 
 **2.-** Desarrolle a continuación un programa `combine-country-data.js`que permita combinar en un único fichero `country-data.json` un conjunto de métricas
