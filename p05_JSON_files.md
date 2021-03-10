@@ -53,7 +53,7 @@ población, etc.
 Utilice el [visualizador on-line de JSON](http://jsonviewer.stack.hu/) para una primera toma de contacto con
 esos datos.
 
-La forma más simple de leer un fichero JSON es usar `require'.
+La forma más simple de leer un fichero JSON es usar `require`.
 Invocando `require()` con la ruta a un archivo JSON se leerán y analizarán los datos de forma síncrona en un objeto JavaScript:
 ```js
 const paises = require('./paises.json')
