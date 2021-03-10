@@ -41,7 +41,10 @@ Compruebe el correcto funcionamiento de su programa con diferentes ficheros de t
 
 ### Tratamiento de Datos. Formato JSON.
 Comience por estudiar el capítulo 10 
-[Modules](https://eloquentjavascript.net/10_modules.html) de Eloquent JavaScript.
+[Modules](https://eloquentjavascript.net/10_modules.html) de Eloquent JavaScript y
+el 
+[correspondiente apartado](https://javascript.info/modules)
+del Modern JS Tutorial.
 
 Estudie a continuación el tutorial
 [Read/Write JSON Files with Node.js](https://medium.com/@osiolabs/read-write-json-files-with-node-js-92d03cc82824).
@@ -53,18 +56,20 @@ población, etc.
 Utilice el [visualizador on-line de JSON](http://jsonviewer.stack.hu/) para una primera toma de contacto con
 esos datos.
 
-La forma más simple de leer un fichero JSON es usar `require`.
-Invocando `require()` con la ruta a un archivo JSON se leerán y analizarán los datos de forma síncrona en un objeto JavaScript:
-```js
-const paises = require('./paises.json')
-```
-
 **1.-** Comience por escribir diferentes módulos (ficheros `.js`; se propone usar módulos en formato CommonJS), 
 uno para cada tipología de datos, en los que se incluyan en
 forma de variables (ha de elegir el tipo de variable a utilizar) la información por países correspondiente a un determinado aspecto (idioma, religión, etc.)
 de cada país.
 Así por ejemplo el módulo `country-population.js` debería contener una entidad (variable, constante, objeto, ...) que almacenara los datos de población de cada uno de los países.
-Ese módulo debería exportar esa variable para hacerla disponible a otros programas JavaScript.
+Ese módulo debería 
+[exportar](https://javascript.info/import-export#export-before-declarations)
+esa variable para hacerla disponible a otros programas JavaScript.
+
+La forma más simple de leer un fichero JSON es usar `require`.
+Invocando `require()` con la ruta a un archivo JSON se leerán y analizarán los datos de forma síncrona en un objeto JavaScript:
+```js
+const paises = require('./paises.json')
+```
 
 **2.-** Desarrolle a continuación un programa `combine-country-data.js`que permita combinar en un único fichero `country-data.json` un conjunto de métricas
 para todos los países considerados.
